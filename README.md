@@ -4,4 +4,4 @@ Dockerfile to get https://github.com/denis-sokolov/remove-github-forks packaged 
 
 ## Usage
 
-docker run -it arska/remove-github-forks mygitlabtoken
+docker run -it arska/remove-github-forks mygithubtoken

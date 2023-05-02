@@ -25,6 +25,9 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: ${{ github.repository }} # name/app
+          tags: |
+            # set latest tag for default branch
+            type=raw,value=latest,enable={{is_default_branch}}
           
       - name: Log in to Docker Hub
         if: github.event_name != 'pull_request'
